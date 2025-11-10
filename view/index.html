@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Pinhead - Portfólio</title>
+    <link rel="stylesheet" href="../css//style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Rafael Pinhead</div>
+                <nav>
+                    <button class="nav-btn active" data-page="bio">Bio</button>
+                    <button class="nav-btn" data-page="projetos">Projetos</button>
+                    <button class="nav-btn" data-page="certificados">Certificados</button>
+                    <button class="nav-btn" data-page="contato">Contato</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="page active" id="bio">
+            <div class="bio-content">
+                <div class="bio-text">
+                    <h1>Olá,</h1>
+                    <p>
+                        me chamo Rafael Pinhead e sou desenvolvedor web em formação. Amo meu trabalho (por mais que as vezes da vontade de puxar os cabelos) e estou sempre buscando desenvolver minhas habilidades para ficar mais preparado para o mercado de trabalho.
+                    </p>
+                    <p style="margin-top: 20px;">
+                        Começei com 15 anos, numa mod de doom. Começou com edição de mapa, mas rapidamente me vi editando funcionalidades e então, entrei por completo na edição de actors.
+                    </p>
+                    <p style="margin-top: 20px;">
+                        Hoje estou cursando Tecnologia da Informação na UNIVESP.
+                    </p>
+                </div>
+                <div class="bio-image"><img src="../assets/myself.jpg" alt="perfil">
+                </div>
+            </div>
+        </div>
+        <div class="page" id="projetos">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="https://github.com/CesarPinheadTI/ZDoom-Realms-of-Despair">
+                        <div class="project-image"><img src="../assets/doom.jpg" alt="doom"></div>
+                        <h3>Mod de Doom</h3>
+                        <p>É uma mod de Doom que tenho desde meus 15 anos. Nele não editei somente mapa, mas também funcionamento dos objetos e scripts.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="certificados">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"><img src="../assets/01. DIO_ Logica 1.jpg" alt="Lógica de Programação"></div>
+                    <h3>Digital Innovation One</h3>
+                    <p>Lógica de programação, incluindo frontend e backend</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><img src="../assets/02. DIO_ Logica 2.jpg" alt="Laravel"></div>
+                    <h3>Digital Innovation One</h3>
+                    <p>Estrutura de CRUD, usando Laravel</p>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="contato">
+            <div class="contact-form">
+                <h2>Entre em Contato</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+                <div class="form-message" id="formMessage"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Imagens -->
+    <div class="modal" id="imageModal">
+        <img id="modalImage" src="" alt="">
+    </div>
+
+    <script src="../js/script.js"></script> 
+</body>
+</html>
